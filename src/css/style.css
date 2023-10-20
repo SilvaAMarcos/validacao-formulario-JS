@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+main {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../images/bg-repeat.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-duvida {
+    /* background-color: cadetblue; */
+    width: 50%;
+    display: flex;
+    padding: 0 60px 0 50px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-duvida .titulo,
+.conteudo {
+    color: #fff;
+}
+
+.section-duvida .titulo {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23.4px;
+    margin-bottom: 11px;
+}
+
+.section-duvida .conteudo {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17.6px;
+}
+
+.section-formulario {
+    /* background-color: burlywood; */
+    width: 50%;
+    height: 1fr;
+    display: flex;
+    align-items: center;
+    padding: 12px 50px 12px 0;
+}
+
+.section-formulario .formulario {
+    width: 100%;
+    max-height: 378px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+}
+.section-formulario .formulario ul li{
+    margin-bottom: 15px;
+}
+
+.section-formulario .formulario ul li input {
+    height: 35px;
+    width: 100%;
+    /* margin-bottom: 15px; */
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-inline: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.section-formulario .formulario ul li .campo-obrigatorio{
+    font-size: 8px;
+    color: #F52E2E;
+    position: absolute;
+    display: none;
+    /* display: block; */
+}
+
+.section-formulario .formulario ul li .ativado{
+    display: block;
+}
+
+.section-formulario .formulario ul li .mensagem {
+    max-height: 100px;
+    width: 100%;
+    /* margin-bottom: 7px; */
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section-formulario .formulario ul li .borda{
+    border: 1px solid #F52E2E;
+}
+
+.section-formulario .formulario ul li textarea::placeholder {
+    position: absolute;
+    top: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-formulario .formulario ul li input::placeholder {
+    position: absolute;
+    top: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    left: 10px;
+}
+
+.section-formulario .formulario ul li .obrigatorio {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.section-formulario .formulario button {
+    height: 41px;
+    cursor: pointer;
+    background-color: #3CCC87;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
+

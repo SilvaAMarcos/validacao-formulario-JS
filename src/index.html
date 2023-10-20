@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="section-duvida">
+            <h1 class="titulo">FICOU COM DÚVIDA? <br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+            <p class="conteudo">
+                caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+                entraremos em contato em menos de 24h.
+            </p>
+        </section>
+
+        <section class="section-formulario">
+            <div class="formulario">
+                <ul>
+                    <li>
+                        <input class="input-dados ativacao-borda" type="text" 
+                        placeholder="Nome Completo *">
+                        <p class="campo-obrigatorio">campo obrigatório</p>
+                    </li>
+                    <li>
+                        <input class="input-dados ativacao-borda" type="email" 
+                        placeholder="Email *">
+                        <p class="campo-obrigatorio">campo obrigatório</p>
+                    </li>
+                    <li>
+                        <input class="input-dados ativacao-borda" type="tel" placeholder="Telefone *">
+                        <p class="campo-obrigatorio">campo obrigatório</p>
+                    </li>
+                    <li>
+                        <textarea class="mensagem ativacao-borda" name="text-mensagem" 
+                        id="" cols="30" rows="10" placeholder="Mensagem *"></textarea>
+                        <p class="campo-obrigatorio">campo obrigatório</p>
+                        <p class="obrigatorio">*campos obrigatórios</p>
+                        
+                    </li>
+                </ul>
+
+                <button id="enviar">Enviar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
