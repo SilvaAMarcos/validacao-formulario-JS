@@ -2,22 +2,24 @@ let botaoEnvia = document.getElementById("enviar");
 
 botaoEnvia.addEventListener("click", function () {
     const valorInputs = document.querySelectorAll(".input-dados");
-    // valorInputs.forEach( function(item){
     let valores = [].map.call(valorInputs, function (input) {
-        return retorno(input.value);
-        // console.log(input.value);
+        const caixaMensagem = document.querySelector(".mensagem").value;
+        return retorno(input.value, caixaMensagem);
     });
+
 })
 
-function retorno(item) {
+function retorno(item, caixaMensagem) {
     const ativando = document.querySelectorAll(".campo-obrigatorio");
     const bordaCaixas = document.querySelectorAll(".ativacao-borda");
-    if (item === '') {
+    if (item === '' || caixaMensagem === '') {
         ativando.forEach(function (item) {
             item.classList.add("ativado")
         });
+        console.log(caixaMensagem);
 
         bordaCaixas.forEach(function (item) {
+            item.classList.remove("borda-todosPreenchidos")
             item.classList.add("borda")
         });
     } else if (item) {
@@ -26,33 +28,10 @@ function retorno(item) {
         });
 
         bordaCaixas.forEach(function (item) {
-            item.classList.remove("borda")
+            item.classList.remove("borda");
+            item.classList.add("borda-todosPreenchidos")
         });
+        
 
     }
 }
-
-
-
-
-
-
-// let valor = document.querySelectorAll(".input-dados");
-
-// let valores = [].map.call(valor, function (input) {
-// //   return input.value;
-//   if(input.value == ''){
-
-
-//     let ativa = array.forEach(element => {
-
-//     }); document.getElementsByClassName("campo-obrigatorio");
-//   }
-// })
-// console.log(valores);
-// });
-
-
-
-// let teste = document.querySelectorAll(".input-dados").values;
-// console.log(teste);

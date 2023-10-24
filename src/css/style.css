@@ -99,6 +99,10 @@ main {
     border: 1px solid #F52E2E;
 }
 
+.section-formulario .formulario ul li .borda-todosPreenchidos{
+    border: 1px solid #00C22B;
+}
+
 .section-formulario .formulario ul li textarea::placeholder {
     position: absolute;
     top: 8px;
